@@ -26,12 +26,14 @@ window.onscroll = function () {
     offers[1].style.animation = "fadeInUp 1.5s 0.4s forwards";
     offers[2].style.animation = "fadeInUp 1.5s 0.8s forwards";
   }
+  else {
+    header.classList.remove("fixed-bar");
+  }
+
   if (scrollY > 2000) {
     service[0].style.animation = "fadeInUp 1.5s forwards";
     service[1].style.animation = "fadeInUp 1.5s 0.4s forwards";
     service[2].style.animation = "fadeInUp 1.5s 0.8s forwards";
     service[3].style.animation = "fadeInUp 1.5s 1.2s forwards";
-  } else {
-    header.classList.remove("fixed-bar");
-  }
+  } 
 };

@@ -189,6 +189,28 @@ header a {
 }
 
 .hero-content h1 {
+  animation: textFromLeft 2s ease-in-out 1;
+}
+
+.hero-content p {
+  animation: textFromLeft 2s ease-in-out .25s 1;
+}
+
+.hero-content a {
+  animation: textFromLeft 2s ease-in-out .5s 1;
+}
+
+@keyframes textFromLeft {
+  0% {
+    transform: translateX(-700px);
+  }
+
+  100% {
+    transform: translatex(0px);
+  }
+}
+
+.hero-content h1 {
   font-size: 76px;
   line-height: 83.6px;
   font-weight: 600;
